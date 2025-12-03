@@ -24,7 +24,7 @@ export default function Login() {
       localStorage.setItem("token", res.data.token);
 
       alert("Login successful!");
-      navigate("/dashboard");
+      navigate("/home");
     } catch (err) {
       alert(err.response?.data?.message || "Login failed");
     }
